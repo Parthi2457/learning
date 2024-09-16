@@ -50,9 +50,11 @@ public class regModule
 		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("Test@123");
 		driver.findElement(By.xpath("//input[@name=\"confirm password\"]")).sendKeys("Test@123");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,3000)");  // Scroll down by 4000 pixels
-		Thread.sleep(3000);
+		js.executeScript("window.scrollBy(0,3000)"); 
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()=\"Register\"]")).click();
+		
+//		Select
 		
 	}
 	
